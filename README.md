@@ -26,7 +26,7 @@ Add it in your root build.gradle at the end of repositories:
 **2. Add the dependency**
 ```
 	dependencies {
-	        compile 'com.github.Ccapton:loadtoast:2.0.0'
+	        compile 'com.github.Ccapton:loadtoast:2.1.0'
 	}
 ```
 
