@@ -11,10 +11,23 @@ The default toasts are ugly and don't really provide much more than a short mess
 ## Step 1
 
 #### Gradle
-```groovy
-dependencies {
-    compile 'net.steamcrafted:load-toast:1.0.12'
-}
+**1. Add the JitPack repository to your build file**
+
+ 
+Add it in your root build.gradle at the end of repositories:
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+**2. Add the dependency**
+```
+	dependencies {
+	        compile 'com.github.Ccapton:loadtoast:2.0.0'
+	}
 ```
 
 ## Step 2
