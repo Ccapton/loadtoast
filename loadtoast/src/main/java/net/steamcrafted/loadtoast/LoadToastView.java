@@ -2,7 +2,6 @@ package net.steamcrafted.loadtoast;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -13,7 +12,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.Log;
 import android.util.TypedValue;
-import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
@@ -44,7 +42,7 @@ public class LoadToastView extends ImageView {
     private RectF spinnerRect = new RectF();
 
     private int MAX_TEXT_WIDTH  = 100; // in DP
-    private int BASE_TEXT_SIZE  = 20;
+    private int BASE_TEXT_SIZE  = 15;
     private int IMAGE_WIDTH     = 40;
     private int TOAST_HEIGHT    = 48;
     private int LINE_WIDTH      = 3;
@@ -261,6 +259,10 @@ public class LoadToastView extends ImageView {
     public void setText(String text) {
         mText = text;
         calculateBounds();
+    }
+
+    public void setTextSize(int sizeDp){
+        BASE_TEXT_SIZE = sizeDp;
     }
 
     private void calculateBounds() {

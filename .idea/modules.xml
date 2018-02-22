@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-loadtoast.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-loadtoast.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gestureTrackerLib.iml" filepath="$PROJECT_DIR$/gestureTrackerLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/loadtoast/loadtoast.iml" filepath="$PROJECT_DIR$/loadtoast/loadtoast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadtoast/loadtoast-loadtoast.iml" filepath="$PROJECT_DIR$/loadtoast/loadtoast-loadtoast.iml" />
     </modules>
   </component>
 </project>
-

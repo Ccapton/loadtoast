@@ -2,7 +2,6 @@ package net.steamcrafted.loadtoast;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.Resources;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -53,6 +52,11 @@ public class LoadToast {
     public LoadToast setText(String message){
         mText = message;
         mView.setText(mText);
+        return this;
+    }
+
+    public LoadToast setTextSize(int sizeDp){
+        mView.setTextSize(sizeDp);
         return this;
     }
 

@@ -1,10 +1,7 @@
 package net.steamcrafted.loadtoastlib;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         final LoadToast lt = new LoadToast(this)
                 .setProgressColor(Color.RED)
                 .setText(text)
+                .setTextSize(14)
                 .setTranslationY(100)
                 .setBorderColor(Color.LTGRAY)
             .show();
